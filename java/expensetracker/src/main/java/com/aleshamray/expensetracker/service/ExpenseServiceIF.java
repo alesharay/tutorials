@@ -8,4 +8,7 @@ public interface ExpenseServiceIF {
 
   List<Expense> findAll();
   
+  void save(Expense expense);
+
+  Expense findById(Long id );
 }
