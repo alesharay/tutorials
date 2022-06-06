@@ -10,5 +10,7 @@ public interface ExpenseServiceIF {
   
   void save(Expense expense);
 
-  Expense findById(Long id );
+  Expense findById(Long id);
+
+  void delete(Long id);
 }

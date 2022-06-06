@@ -31,4 +31,10 @@ public class ExpenseServiceImpl implements ExpenseServiceIF {
       expenseRepository.findById(id).get() : null;
   }
 
+  @Override
+  public void delete(Long id) {
+    Expense expense = findById(id);
+    expenseRepository.delete(expense);
+  }
+
 }
